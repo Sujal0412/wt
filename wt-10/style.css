@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img1,
+.img3 {
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  background-attachment: fixed; /* Add this line */
+}
+.text {
+  padding: 18px;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 10px;
+  background-color: black;
+}
+.text1 {
+  padding: 50px 80px;
+  z-index: 1;
+  height: 40%;
+  background-color: white;
+}
+.img2 {
+  height: 100vh;
+  width: 100%;
+}
+.text1 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.text1 p {
+  color: #777;
+  text-align: justify;
+  font-size: 20px;
+}
+.im {
+  background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; /* Add this line */
+}

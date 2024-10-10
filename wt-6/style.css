@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin {
+  padding: 20px;
+  border: 2px dotted black;
+  background-color: #f6cc9c;
+}
+.border {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: #fcdd9a;
+}
+.padding {
+  margin: 20px;
+  background-color: #c3d08a;
+  padding: 20px;
+  border: 2px solid black;
+}
+.padding p {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: #8cb6c0;
+}

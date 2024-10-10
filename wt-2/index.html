@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 20%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #9c8a8a;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+      }
+      form div {
+        padding: 10px;
+      }
+      form div label {
+        padding-right: 20px;
+      }
+      form div input {
+        font-size: 15px;
+      }
+      .btn {
+        background-color: rgb(27, 171, 228);
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 15px;
+      }
+      .btn:hover {
+        background-color: rgb(147, 207, 211);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <h2>Student information</h2>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>sujal</td>
+          <td>18</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>nevil</td>
+          <td>18</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>het</td>
+          <td>19</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>New Student Registration</h2>
+    <form action="/">
+      <div class="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+      </div>
+      <div class="">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+      </div>
+      <div class="">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required /><br />
+      </div>
+      <input type="submit" value="Register" class="btn" />
+    </form>
+  </body>
+</html>
