@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GitHub Profile Viewer</h1>
+
+      <!-- Form to input GitHub username -->
+      <form id="github-form">
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter GitHub username"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Display the profile information -->
+      <div id="profile" class="card hidden">
+        <img id="avatar" class="avatar" src="" alt="User Avatar" />
+        <div class="info">
+          <h2 id="name"></h2>
+          <p id="bio"></p>
+          <ul class="stats">
+            <li>
+              <strong>Public Repositories:</strong> <span id="repos"></span>
+            </li>
+            <li><strong>Followers:</strong> <span id="followers"></span></li>
+            <li><strong>Following:</strong> <span id="following"></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p id="error-message" class="error hidden">
+        User not found. Please try again.
+      </p>
+
+      <!-- Search history section -->
+      <div id="history" class="history hidden">
+        <h2>Search History</h2>
+        <ul id="history-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

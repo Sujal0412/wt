@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 250px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Profile card styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: opacity 0.3s ease;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.info {
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+ul.stats {
+  list-style-type: none;
+}
+
+.stats li {
+  margin-bottom: 8px;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Hidden class */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card.visible,
+.error.visible {
+  opacity: 1;
+  visibility: visible;
+}
+/* Add styling for search history */
+.history {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.history h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.history ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history li {
+  background-color: #f0f0f5;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.history li:hover {
+  background-color: #e0e0e5;
+  cursor: pointer;
+}
